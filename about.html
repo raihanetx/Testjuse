@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="css/minimal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Agency Logo" width="30" height="30">
+                    AGENCY
+                </a>
+                <ul class="menu-items">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">Menu</button>
+            </nav>
+        </header>
+
+        <section class="page-header">
+            <h1 class="page-title">About Us</h1>
+        </section>
+
+        <section class="about-intro">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2020, our agency was built on the principle that digital marketing should be simple, effective, and transparent. We believe in creating meaningful connections between brands and their audiences through strategic, data-driven approaches.</p>
+                <p>Our team of specialists brings together diverse expertise in SEO, content marketing, paid advertising, and social media to deliver comprehensive solutions tailored to each client's unique needs.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/hero.jpg" alt="Our team" class="about-img">
+            </div>
+        </section>
+
+        <section class="values">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Simplicity</h3>
+                    <p>We believe in cutting through the noise and focusing on what truly matters for your business growth.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Transparency</h3>
+                    <p>Clear communication and honest reporting are the foundations of our client relationships.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Results</h3>
+                    <p>We're driven by measurable outcomes and continuous improvement in everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300.png?text=J" alt="John Doe" class="team-img">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300.png?text=S" alt="Sarah Smith" class="team-img">
+                    <h3>Sarah Smith</h3>
+                    <p>SEO Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300x300.png?text=M" alt="Michael Johnson" class="team-img">
+                    <h3>Michael Johnson</h3>
+                    <p>Creative Lead</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Digital Agency. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-checkbox">
+        <label for="dark-mode-checkbox"></label>
+    </div>
+
+    <script>
+        // Simple dark mode toggle
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        darkModeCheckbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
