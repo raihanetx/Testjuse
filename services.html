@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="css/minimal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Agency Logo" width="30" height="30">
+                    AGENCY
+                </a>
+                <ul class="menu-items">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">Menu</button>
+            </nav>
+        </header>
+
+        <section class="page-header">
+            <h1 class="page-title">Our Services</h1>
+            <p class="page-subtitle">Tailored digital marketing solutions to help your business grow</p>
+        </section>
+
+        <section class="service-detail">
+            <div class="service-detail-content">
+                <h2 class="section-title">Search Engine Optimization</h2>
+                <p>Our data-driven SEO strategies help your business rank higher in search results, driving more organic traffic to your website and increasing your online visibility.</p>
+                <ul class="service-features">
+                    <li>Comprehensive keyword research and analysis</li>
+                    <li>On-page optimization and technical SEO</li>
+                    <li>Content strategy and creation</li>
+                    <li>Link building and authority development</li>
+                    <li>Local SEO for businesses with physical locations</li>
+                </ul>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="service-detail-image">
+                <img src="images/service1.jpg" alt="SEO Service" class="service-img">
+            </div>
+        </section>
+
+        <section class="service-detail reverse">
+            <div class="service-detail-content">
+                <h2 class="section-title">Pay-Per-Click Advertising</h2>
+                <p>Our PPC campaigns are designed to maximize your ROI by targeting the right audience with compelling ad copy and strategic bidding strategies.</p>
+                <ul class="service-features">
+                    <li>Google Ads and Microsoft Advertising management</li>
+                    <li>Social media advertising (Facebook, Instagram, LinkedIn)</li>
+                    <li>Display and remarketing campaigns</li>
+                    <li>Shopping campaigns for e-commerce businesses</li>
+                    <li>Conversion tracking and optimization</li>
+                </ul>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="service-detail-image">
+                <img src="images/service2.jpg" alt="PPC Service" class="service-img">
+            </div>
+        </section>
+
+        <section class="service-detail">
+            <div class="service-detail-content">
+                <h2 class="section-title">Social Media Marketing</h2>
+                <p>Build meaningful connections with your audience through strategic social media marketing that enhances brand awareness and drives engagement.</p>
+                <ul class="service-features">
+                    <li>Social media strategy development</li>
+                    <li>Content creation and curation</li>
+                    <li>Community management and engagement</li>
+                    <li>Influencer partnerships</li>
+                    <li>Social analytics and reporting</li>
+                </ul>
+                <a href="index.html#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="service-detail-image">
+                <img src="images/service3.jpg" alt="Social Media Service" class="service-img">
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to grow your business?</h2>
+            <p>Let's discuss how our services can help you achieve your goals.</p>
+            <a href="index.html#contact" class="cta-button">Contact Us</a>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Digital Agency. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-checkbox">
+        <label for="dark-mode-checkbox"></label>
+    </div>
+
+    <script>
+        // Simple dark mode toggle
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        darkModeCheckbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

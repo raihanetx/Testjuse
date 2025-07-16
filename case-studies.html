@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="css/minimal.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="Agency Logo" width="30" height="30">
+                    AGENCY
+                </a>
+                <ul class="menu-items">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="case-studies.html" class="active">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">Menu</button>
+            </nav>
+        </header>
+
+        <section class="page-header">
+            <h1 class="page-title">Case Studies</h1>
+            <p class="page-subtitle">Real results for real businesses</p>
+        </section>
+
+        <section class="case-studies-grid">
+            <div class="case-study-card">
+                <img src="images/case-study.jpg" alt="E-commerce Case Study" class="case-study-card-image">
+                <div class="case-study-card-content">
+                    <span class="case-study-category">E-commerce</span>
+                    <h2>200% Increase in Conversions for Fashion Retailer</h2>
+                    <p>How we helped a struggling online fashion store transform their digital presence and boost sales.</p>
+                    <a href="case-study-1.html" class="text-link">Read Case Study →</a>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <img src="images/service1.jpg" alt="SaaS Case Study" class="case-study-card-image">
+                <div class="case-study-card-content">
+                    <span class="case-study-category">SaaS</span>
+                    <h2>150% Growth in Qualified Leads for B2B Software</h2>
+                    <p>Strategic content marketing and SEO that transformed lead generation for a B2B SaaS company.</p>
+                    <a href="case-study-2.html" class="text-link">Read Case Study →</a>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <img src="images/service2.jpg" alt="Local Business Case Study" class="case-study-card-image">
+                <div class="case-study-card-content">
+                    <span class="case-study-category">Local Business</span>
+                    <h2>300% ROI on Local SEO Campaign for Restaurant Chain</h2>
+                    <p>How we helped a local restaurant chain dominate local search and increase foot traffic.</p>
+                    <a href="case-study-3.html" class="text-link">Read Case Study →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-detail" id="case-study-1">
+            <h2 class="section-title">Featured Case Study</h2>
+            <div class="case-study-detail-grid">
+                <div class="case-study-detail-content">
+                    <span class="case-study-category">E-commerce</span>
+                    <h3>200% Increase in Conversions for Fashion Retailer</h3>
+                    
+                    <div class="case-study-stats">
+                        <div class="case-stat">
+                            <span class="stat-number">200%</span>
+                            <span class="stat-label">Conversion Rate Increase</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="stat-number">45%</span>
+                            <span class="stat-label">Organic Traffic Growth</span>
+                        </div>
+                        <div class="case-stat">
+                            <span class="stat-number">3.2x</span>
+                            <span class="stat-label">ROI on Ad Spend</span>
+                        </div>
+                    </div>
+                    
+                    <h4>The Challenge</h4>
+                    <p>Our client, a mid-sized fashion retailer, was struggling with low conversion rates and high cart abandonment despite having quality products and competitive pricing.</p>
+                    
+                    <h4>Our Approach</h4>
+                    <p>We implemented a comprehensive strategy that included:</p>
+                    <ul>
+                        <li>Complete UX audit and website redesign focusing on simplicity</li>
+                        <li>Streamlined checkout process reducing steps by 40%</li>
+                        <li>Targeted remarketing campaigns to recover abandoned carts</li>
+                        <li>SEO optimization for key product categories</li>
+                    </ul>
+                    
+                    <h4>The Results</h4>
+                    <p>Within 6 months, the client saw a 200% increase in conversion rate, 45% growth in organic traffic, and a 3.2x return on ad spend.</p>
+                    
+                    <a href="case-study-1.html" class="cta-button">Read Full Case Study</a>
+                </div>
+                <div class="case-study-detail-image">
+                    <img src="images/case-study.jpg" alt="E-commerce Case Study" class="case-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to achieve similar results?</h2>
+            <p>Let's discuss how we can help your business grow.</p>
+            <a href="index.html#contact" class="cta-button">Contact Us</a>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Digital Agency. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="dark-mode-checkbox">
+        <label for="dark-mode-checkbox"></label>
+    </div>
+
+    <script>
+        // Simple dark mode toggle
+        const darkModeCheckbox = document.getElementById('dark-mode-checkbox');
+        darkModeCheckbox.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuItems = document.querySelector('.menu-items');
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
