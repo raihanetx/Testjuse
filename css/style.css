@@ -1,0 +1,441 @@
+/* CSS variables for colors */
+:root {
+    --deep-navy: #0A2463;
+    --energetic-blue: #3E92CC;
+    --clean-white: #FFFAFF;
+    --accent-coral: #D8315B;
+    --rich-black: #1E1B18;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clean-white);
+    color: var(--rich-black);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--deep-navy);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+    color: var(--clean-white);
+}
+
+.kinetic-text {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-coral);
+    color: var(--clean-white);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: var(--clean-white);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--energetic-blue);
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: var(--deep-navy);
+    color: var(--clean-white);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.service-card {
+    background-color: var(--energetic-blue);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.service-card:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(10deg) scale3d(1.05, 1.05, 1.05);
+}
+
+.case-studies {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.case-study {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.before-after-slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.before-after-slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.before-after-slider img:last-child {
+    clip-path: inset(0 0 0 50%);
+}
+
+.trust-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: var(--clean-white);
+}
+
+.verified-reviews {
+    text-align: center;
+}
+
+.press-features {
+    width: 60%;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+    margin-right: 2rem;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.sticky-cta-ribbon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--energetic-blue);
+    color: var(--clean-white);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.sticky-cta-ribbon.visible {
+    transform: translateY(0);
+}
+
+.sticky-cta-ribbon p {
+    margin: 0 1rem 0 0;
+}
+
+.exit-intent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.exit-intent-popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background-color: var(--clean-white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.book-call-button {
+    background: linear-gradient(to right, var(--accent-coral), var(--energetic-blue));
+    background-size: 200% 100%;
+    animation: gradient-animation 5s ease infinite, pulse 2s infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.isometric-illustration {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.isometric-illustration img {
+    transition: transform 0.5s ease;
+}
+
+.isometric-illustration img:hover {
+    transform: scale(1.1) rotateZ(-5deg);
+}
+
+.mega-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clean-white);
+    text-decoration: none;
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+}
+
+.menu-items li {
+    margin-left: 2rem;
+}
+
+.menu-items a {
+    color: var(--clean-white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--clean-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--deep-navy);
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    z-index: 10;
+}
+
+#dark-mode-checkbox {
+    display: none;
+}
+
+#dark-mode-checkbox + label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: var(--clean-white);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#dark-mode-checkbox + label::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--deep-navy);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-checkbox:checked + label {
+    background-color: var(--deep-navy);
+}
+
+#dark-mode-checkbox:checked + label::after {
+    background-color: var(--clean-white);
+    transform: translateX(20px);
+}
+
+body.dark-mode {
+    background-color: var(--rich-black);
+    color: var(--clean-white);
+}
+
+body.dark-mode .hero #particles-js {
+    background-color: var(--rich-black);
+}
+
+body.dark-mode .stats {
+    background-color: var(--rich-black);
+}
+
+body.dark-mode .services {
+    background-color: #000;
+}
+
+body.dark-mode .case-studies {
+    background-color: var(--rich-black);
+}
+
+body.dark-mode .trust-elements {
+    background-color: var(--rich-black);
+}
+
+body.dark-mode .popup-content {
+    background-color: var(--rich-black);
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--energetic-blue);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s ease;
+    z-index: 9999;
+}
+
+.custom-cursor.trail {
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-coral);
+    border: none;
+}
